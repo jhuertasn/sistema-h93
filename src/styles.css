@@ -16,4 +16,17 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   .example-spacer {
     flex: 1 1 auto;
   }
-  
+
+ .mt20{
+   margin-top:20px 
+   /*El important es para que coja nuestros estilos y no los del angular material*/
+   !important;
+ } 
+
+ .mr20{
+    margin-right: 20px !important;
+ }
+ 
+ .ml70{
+    margin-left: 170px !important;
+ }

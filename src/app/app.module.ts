@@ -14,6 +14,14 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatInputModule} from '@angular/material/input';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
+import { HomeComponent } from './pages/home/home.component';
+//importar Iconos
+import {MatIconModule} from '@angular/material/icon';
+import { ListarclientesComponent } from './pages/listarclientes/listarclientes.component';
+import { ModuloadministrativoComponent } from './pages/moduloadministrativo/moduloadministrativo.component';
+import {MatTableModule} from '@angular/material/table';
+import { ModulodirectivoComponent } from './pages/modulodirectivo/modulodirectivo.component';
 
 
 
@@ -25,6 +33,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     NavbarComponent,
     LoginComponent,
     SignupComponent,
+    HomeComponent,
+    ListarclientesComponent,
+    ModuloadministrativoComponent,
+    ModulodirectivoComponent,
     //ClientesComponent
   ],
   imports: [
@@ -40,7 +52,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatSnackBarModule,
     MatToolbarModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatCardModule,
+    MatIconModule,
+    MatTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

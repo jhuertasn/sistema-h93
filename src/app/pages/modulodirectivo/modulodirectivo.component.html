@@ -1,0 +1,20 @@
+<h1>Bienvenido a MODULO Directivo</h1>
+<table class="table table-dark">
+    <thead class="table-dark">
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Dni</th>
+            <th>correo</th>
+        </tr>
+        
+    </thead>
+    <tbody>
+        <tr *ngFor ="let i of lcliente">
+            <td>{{ i.nombCliente}}</td>
+            <td>{{ i.apellCliente}}</td>
+            <td>{{ i.dniCliente}}</td>
+            <td>{{ i.correoCliente}}</td>
+        </tr>
+    </tbody>
+</table>

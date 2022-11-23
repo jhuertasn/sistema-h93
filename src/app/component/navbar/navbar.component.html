@@ -1,7 +1,30 @@
 <mat-toolbar color="primary">
-    <span>Portal de Ventas</span>
-    <span class="example-spacer"></span>
-    <a>
-        Registrar
+    <a
+        routerLink=""
+        mat-icon-buttom class="example-icon"
+        aria-label="Example icon-button with menu icon" 
+        >
+        <mat-icon>home</mat-icon>
     </a>
+    
+
+    <span>Portal de Estudiantes</span>
+    <span class="example-spacer"></span>
+
+    <a 
+        routerLink="/login"
+        mat-icon-button class="example-icon favorite-icon"
+        aria-label="Example icon-button with heart icon"
+    >         
+        Iniciar Sesion
+    </a>
+
+    <a 
+        routerLink="/signup"
+        mat-icon-button class="example-icon favorite-icon mr20 ml70"
+        aria-label="Example icon-button with heart icon"
+    >         
+        Registar
+    </a>
+
 </mat-toolbar>

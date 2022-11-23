@@ -6,16 +6,16 @@
                     <img src="../../../assets/login.png" width="80" height="80">
                 </div>
                 <h1 class="text-center">Inicia Sesión</h1> 
-                <form action="">
+                <form (ngSubmit)="formSubmit()">
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Nombre de Usuario</mat-label>
-                        <input   name="username" matInput placeholder="Digite su nombre de usuario" >
+                        <input required [(ngModel)]="datalogin.username"  name="username" matInput placeholder="Digite su nombre de usuario" >
                         <mat-hint>El nombre del usuario debe ser Valido</mat-hint>
                     </mat-form-field>
 
                     <mat-form-field class="full-width" appearance="outline">
                         <mat-label>Contraseña</mat-label>
-                        <input  name="password" type="password" matInput placeholder="Digite su contraseña">
+                        <input required [(ngModel)]="datalogin.password" name="password" type="password" matInput placeholder="Digite su contraseña" >
                     </mat-form-field>
                     
                     <br><br>

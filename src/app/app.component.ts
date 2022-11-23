@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatTable } from '@angular/material/table';
+
+
 
 @Component({
   selector: 'app-root',
@@ -8,3 +11,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'sistema-h93';
 }
+

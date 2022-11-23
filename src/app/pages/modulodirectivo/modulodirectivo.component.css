@@ -1,0 +1,39 @@
+.demo-table {
+    width: 100%;
+  }
+  
+  .mat-column-demo-position {
+    width: 32px;
+    border-right: 1px solid currentColor;
+    padding-right: 24px;
+    text-align: center;
+  }
+  
+  .mat-column-demo-name {
+    padding-left: 16px;
+    font-size: 20px;
+  }
+  
+  .mat-column-demo-weight {
+    font-style: italic;
+  }
+  
+  .mat-column-demo-symbol {
+    width: 32px;
+    text-align: center;
+    font-weight: bold;
+  }
+
+
+  table {
+    width: 100%;
+  }
+
+ .contenedor {
+    display: flex;
+    flex-direction: column;
+    margin:1rem auto;
+    max-width: 600px;
+    box-shadow: -1px 3px 66px 0px rgba(0,0,0,0.75);
+    padding: 1rem;
+}   
