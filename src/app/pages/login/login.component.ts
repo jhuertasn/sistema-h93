@@ -47,11 +47,16 @@ export class LoginComponent implements OnInit {
             //creando la funcion para el cambio de vistas si el usuario 
             // es admin o cliente
             if(this.logService.getUserRol()== 'administrador'){
-              this.router.navigate(["/moduloAdmin"]);
+              this.router.navigate(["/admin"]);
+              //esta linea nos dice si estamos conectados o no dependiendo
+              //del rol sera indistinto
+              this.logService.loginStatusSubject.next(true);
             }else if (this.logService.getUserRol() == 'Directivo'){
               this.router.navigate(["/moduloDir"]); 
+              this.logService.loginStatusSubject.next(true);
             }else if (this.logService.getUserRol() == 'Cliente'){
               this.router.navigate(["/listarClientes"]);
+              this.logService.loginStatusSubject.next(true);
             }
 
           })

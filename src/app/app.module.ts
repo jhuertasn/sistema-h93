@@ -22,6 +22,13 @@ import { ListarclientesComponent } from './pages/listarclientes/listarclientes.c
 import { ModuloadministrativoComponent } from './pages/moduloadministrativo/moduloadministrativo.component';
 import {MatTableModule} from '@angular/material/table';
 import { ModulodirectivoComponent } from './pages/modulodirectivo/modulodirectivo.component';
+import { AdminComponent } from './pages/admin/admin.component';
+import { BienvenidoComponent } from './pages/admin/bienvenido/bienvenido.component';
+import {MatDividerModule} from '@angular/material/divider';
+import { SliderbarComponent } from './pages/admin/sliderbar/sliderbar.component';
+import {MatListModule} from '@angular/material/list';
+import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
+import{ProfileComponent}from './pages/profile/profile.component';
 
 
 
@@ -37,6 +44,11 @@ import { ModulodirectivoComponent } from './pages/modulodirectivo/modulodirectiv
     ListarclientesComponent,
     ModuloadministrativoComponent,
     ModulodirectivoComponent,
+    AdminComponent,
+    BienvenidoComponent,
+    SliderbarComponent,
+    DashboardComponent,
+    ProfileComponent,
     //ClientesComponent
   ],
   imports: [
@@ -56,6 +68,8 @@ import { ModulodirectivoComponent } from './pages/modulodirectivo/modulodirectiv
     MatCardModule,
     MatIconModule,
     MatTableModule,
+    MatDividerModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

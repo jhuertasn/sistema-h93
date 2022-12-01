@@ -1,5 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
 import urlbase from './helper';
 
 @Injectable({
@@ -8,7 +9,8 @@ import urlbase from './helper';
 export class LoginService {
 
   //contrullendo los servicios para el token
-
+  public loginStatusSubject = new Subject<Boolean>;
+  
   constructor(private httpClient: HttpClient) {
 
    }
