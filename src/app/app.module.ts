@@ -29,6 +29,7 @@ import { SliderbarComponent } from './pages/admin/sliderbar/sliderbar.component'
 import {MatListModule} from '@angular/material/list';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import{ProfileComponent}from './pages/profile/profile.component';
+import { CategoriaComponent } from './pages/admin/categoria/categoria.component';
 
 
 
@@ -49,6 +50,7 @@ import{ProfileComponent}from './pages/profile/profile.component';
     SliderbarComponent,
     DashboardComponent,
     ProfileComponent,
+    CategoriaComponent,
     //ClientesComponent
   ],
   imports: [

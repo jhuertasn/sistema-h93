@@ -1,0 +1,13 @@
+<mat-card>
+    <mat-list>
+        <div mat-subheader>
+            Todas las categorias.
+        </div>
+        <mat-list-item *ngFor= "let i of categorias" >
+            <mat-icon mat-icon-List>Categoria</mat-icon>
+            <div mat-line>{{i.titulo}}</div>
+            <div mat-line>{{i.descripcion}}</div>
+            <mat-divider></mat-divider>
+        </mat-list-item>
+    </mat-list>
+</mat-card>

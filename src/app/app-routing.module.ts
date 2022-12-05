@@ -11,6 +11,7 @@ import { BienvenidoComponent } from './pages/admin/bienvenido/bienvenido.compone
 import { SliderbarComponent } from './pages/admin/sliderbar/sliderbar.component';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import {ProfileComponent} from './pages/profile/profile.component';
+import { CategoriaComponent } from './pages/admin/categoria/categoria.component';
 
 const routes: Routes = [
   //Rutas del Proyecto
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path: 'moduloAdmin', component:ModuloadministrativoComponent,pathMatch:'full'},
   {path: 'moduloDir', component:ModulodirectivoComponent,pathMatch:'full'},
   {path: 'profile', component:ProfileComponent,pathMatch:'full'},
+
   //{path:'bienvenidoAdmin', component:BienvenidoComponent, pathMatch: 'full'},
   //{path: 'sliderbar', component:SliderbarComponent,pathMatch:'full'},
 
@@ -31,7 +33,11 @@ const routes: Routes = [
     },
     {
       path:'sliderbar',component: SliderbarComponent,
-    }]
+    },
+    {
+      path:'categoria-view',component: CategoriaComponent,
+    }
+  ]
   }
 ];
 
