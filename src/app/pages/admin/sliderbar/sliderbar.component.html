@@ -5,7 +5,7 @@
             <mat-icon mat-list-icon>home</mat-icon>
             inicio
         </button>
-        <button mat-list-item>
+        <button mat-list-item routerLink="/admin/profile">
             <mat-icon mat-list-icon>account_circle</mat-icon>
             Perfil
         </button>
@@ -13,19 +13,19 @@
             <mat-icon mat-list-icon>list</mat-icon>
             Categorias
         </button>
-        <button mat-list-item>
+        <button mat-list-item routerLink="/admin/categoria-add">
             <mat-icon mat-list-icon>add_circle_outline</mat-icon>
             Agregar Categoria
         </button>
-        <button mat-list-item>
+        <button mat-list-item routerLink="/admin/examen-view">
             <mat-icon mat-list-icon>quiz</mat-icon>
             Cuestionario
         </button>
-        <button mat-list-item>
+        <button mat-list-item routerLink="/admin/examen-add">
             <mat-icon mat-list-icon>add</mat-icon>
             Agregar cuestionario
         </button>
-        <button mat-list-item>
+        <button mat-list-item (click)="logout()">
             <mat-icon mat-list-icon>logout</mat-icon>
             Salir
         </button>

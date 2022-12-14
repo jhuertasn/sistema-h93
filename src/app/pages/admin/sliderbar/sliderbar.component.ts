@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LoginService } from 'src/app/service/login.service';
 
 @Component({
   selector: 'app-sliderbar',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private login:LoginService) { }
 
   ngOnInit(): void {
+  }
+
+  public logout(){
+    this.login.logout();
+    window.location.reload();
   }
 
 }
