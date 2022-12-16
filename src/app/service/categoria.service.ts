@@ -11,7 +11,7 @@ export class CategoriaService {
 
   //get
   public listarCategoria(){
-    return this.http.get(`${urlbase}/categoria/listar`,{ 
+    return this.http.get(`${urlbase}/categoria/obtener`,{ 
       //llamando el token a listarcategoria
       headers: new HttpHeaders({'Authorization': 'Bearer ' + localStorage.getItem('token')})
   });

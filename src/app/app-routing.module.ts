@@ -26,7 +26,7 @@ const routes: Routes = [
   {path: 'listarClientes', component:ListarclientesComponent,pathMatch:'full'},
   {path: 'moduloAdmin', component:ModuloadministrativoComponent,pathMatch:'full'},
   {path: 'moduloDir', component:ModulodirectivoComponent,pathMatch:'full'},
-  {path: 'profile', component:ProfileComponent,pathMatch:'full'},
+  
 
   //{path:'bienvenidoAdmin', component:BienvenidoComponent, pathMatch: 'full'},
   //{path: 'sliderbar', component:SliderbarComponent,pathMatch:'full'},
@@ -54,18 +54,15 @@ const routes: Routes = [
       path:'examen-add',component: AgregarExamenComponent,
     },
     {
-      path:'pregunta-view',component: PreguntaComponent,
+      path:'pregunta-view/:examenId/:titulo',component: PreguntaComponent,
     },
     {
-      path:'pregunta-add',component: AgregarPreguntaComponent,
+      path:'pregunta-add/:examenId/:titulo',component: AgregarPreguntaComponent,
     },
     {
       path: 'profile', component:ProfileComponent,
     }
-
-
-  ]
-  }
+  ]}
 ];
 
 @NgModule({

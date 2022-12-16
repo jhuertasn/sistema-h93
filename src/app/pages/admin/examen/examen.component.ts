@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ExamenService } from 'src/app/service/examen.service';
 
 @Component({
   selector: 'app-examen',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExamenComponent implements OnInit {
 
-  constructor() { }
+  examenes:any []= [];
+
+  constructor(private exaservice:ExamenService) { }
 
   ngOnInit(): void {
+    this.exaservice.listarExamen().subscribe(
+      (dato:any)=>{
+        this.examenes=dato;
+      }
+    )
+  
   }
-
 }
