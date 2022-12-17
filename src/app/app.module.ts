@@ -37,6 +37,10 @@ import { PreguntaComponent } from './pages/admin/pregunta/pregunta.component';
 import { AgregarPreguntaComponent } from './pages/admin/agregar-pregunta/agregar-pregunta.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
+//sliderbar de alumno
+import { SliderbarAlumnoComponent } from './pages/listarclientes/sliderbar-alumno/sliderbar-alumno.component';
+import { RespuestasComponent } from './pages/listarclientes/respuestas/respuestas.component';
+import { PreguntasComponent } from './pages/listarclientes/preguntas/preguntas.component';
 
 
 //import { ClientesComponent } from './pages/clientes/clientes.component';
@@ -61,7 +65,10 @@ import {MatSelectModule} from '@angular/material/select';
     ExamenComponent,
     AgregarExamenComponent,
     PreguntaComponent,
-    AgregarPreguntaComponent
+    AgregarPreguntaComponent,
+    SliderbarAlumnoComponent,
+    RespuestasComponent,
+    PreguntasComponent
     //ClientesComponent
   ],
   imports: [
